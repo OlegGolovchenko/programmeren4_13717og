@@ -1,0 +1,28 @@
+[19-Dec-2016 13:54:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php on line 29
+[19-Dec-2016 13:54:14 UTC] PHP Stack trace:
+[19-Dec-2016 13:54:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php:0
+[19-Dec-2016 13:54:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php on line 39
+[19-Dec-2016 13:54:14 UTC] PHP Stack trace:
+[19-Dec-2016 13:54:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php:0
+[19-Dec-2016 13:55:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php on line 27
+[19-Dec-2016 13:55:23 UTC] PHP Stack trace:
+[19-Dec-2016 13:55:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php:0
+[19-Dec-2016 13:55:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php on line 37
+[19-Dec-2016 13:55:23 UTC] PHP Stack trace:
+[19-Dec-2016 13:55:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php:0
+[19-Dec-2016 13:55:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php on line 27
+[19-Dec-2016 13:55:50 UTC] PHP Stack trace:
+[19-Dec-2016 13:55:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php:0
+[19-Dec-2016 13:55:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php on line 37
+[19-Dec-2016 13:55:50 UTC] PHP Stack trace:
+[19-Dec-2016 13:55:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php:0
+[19-Dec-2016 13:56:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php on line 27
+[19-Dec-2016 13:56:07 UTC] PHP Stack trace:
+[19-Dec-2016 13:56:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php:0
+[19-Dec-2016 13:56:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php on line 37
+[19-Dec-2016 13:56:07 UTC] PHP Stack trace:
+[19-Dec-2016 13:56:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php:0
+[19-Dec-2016 13:57:10 UTC] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php on line 12
+[19-Dec-2016 13:57:10 UTC] PHP Stack trace:
+[19-Dec-2016 13:57:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php:0
+[19-Dec-2016 13:57:10 UTC] PHP   2. PDOStatement->execute() /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php:12
