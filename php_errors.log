@@ -26,3 +26,102 @@
 [19-Dec-2016 13:57:10 UTC] PHP Stack trace:
 [19-Dec-2016 13:57:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php:0
 [19-Dec-2016 13:57:10 UTC] PHP   2. PDOStatement->execute() /home/ubuntu/workspace/oefeningen/oefeningPdo/oefeningPdo.php:12
+[21-Dec-2016 14:17:24 UTC] PHP Fatal error:  Class 'Modernways\Mvc\Controller' not found in /home/ubuntu/workspace/vendor/programmeren4/article/src/Controller/Home.php on line 3
+[21-Dec-2016 14:17:24 UTC] PHP Stack trace:
+[21-Dec-2016 14:17:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:0
+[21-Dec-2016 14:17:24 UTC] PHP   2. ModernWays\Mvc\RouteConfig->invokeActionMethod() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:7
+[21-Dec-2016 14:17:24 UTC] PHP   3. ReflectionMethod->__construct() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:48
+[21-Dec-2016 14:17:24 UTC] PHP   4. spl_autoload_call() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:48
+[21-Dec-2016 14:17:24 UTC] PHP   5. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:48
+[21-Dec-2016 14:17:24 UTC] PHP   6. Composer\Autoload\includeFile() /home/ubuntu/workspace/vendor/composer/ClassLoader.php:301
+[21-Dec-2016 14:17:24 UTC] PHP   7. include() /home/ubuntu/workspace/vendor/composer/ClassLoader.php:414
+[21-Dec-2016 14:27:22 UTC] PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Method Programmeren4\Article\Controller\Home::index() does not exist' in /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:48
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php(48): ReflectionMethod->__construct('\Programmeren4\...', 'index')
+#1 /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php(7): ModernWays\Mvc\RouteConfig->invokeActionMethod()
+#2 {main}
+  thrown in /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php on line 48
+[21-Dec-2016 14:27:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/vendor/programmeren4/article/src/Controller/Home.php:8
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/programmeren4/article/src/Controller/Home.php(8): PDO->__construct('mysql:host=loca...')
+#1 [internal function]: Programmeren4\Article\Controller\Home->__construct(Object(ModernWays\Mvc\Route), Object(ModernWays\Dialog\Model\NoticeBoard))
+#2 /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php(61): ReflectionClass->newInstance(Object(ModernWays\Mvc\Route), Object(ModernWays\Dialog\Model\NoticeBoard))
+#3 /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php(7): ModernWays\Mvc\RouteConfig->invokeActionMethod()
+#4 {main}
+  thrown in /home/ubuntu/workspace/vendor/programmeren4/article/src/Controller/Home.php on line 8
+[21-Dec-2016 14:28:46 UTC] PHP Fatal error:  Call to a member function setList() on a non-object in /home/ubuntu/workspace/vendor/programmeren4/article/src/Controller/Home.php on line 14
+[21-Dec-2016 14:28:46 UTC] PHP Stack trace:
+[21-Dec-2016 14:28:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:0
+[21-Dec-2016 14:28:46 UTC] PHP   2. ModernWays\Mvc\RouteConfig->invokeActionMethod() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:7
+[21-Dec-2016 14:28:46 UTC] PHP   3. ReflectionMethod->invoke() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:69
+[21-Dec-2016 14:28:46 UTC] PHP   4. Programmeren4\Article\Controller\Home->editing() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:69
+[21-Dec-2016 14:29:35 UTC] PHP Fatal error:  Class 'Modermways\Mvc\Model' not found in /home/ubuntu/workspace/vendor/programmeren4/article/src/Model/Article.php on line 3
+[21-Dec-2016 14:29:35 UTC] PHP Stack trace:
+[21-Dec-2016 14:29:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:0
+[21-Dec-2016 14:29:35 UTC] PHP   2. ModernWays\Mvc\RouteConfig->invokeActionMethod() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:7
+[21-Dec-2016 14:29:35 UTC] PHP   3. ReflectionMethod->invoke() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:69
+[21-Dec-2016 14:29:35 UTC] PHP   4. Programmeren4\Article\Controller\Home->editing() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:69
+[21-Dec-2016 14:29:35 UTC] PHP   5. spl_autoload_call() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:14
+[21-Dec-2016 14:29:35 UTC] PHP   6. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:14
+[21-Dec-2016 14:29:35 UTC] PHP   7. Composer\Autoload\includeFile() /home/ubuntu/workspace/vendor/composer/ClassLoader.php:301
+[21-Dec-2016 14:29:35 UTC] PHP   8. include() /home/ubuntu/workspace/vendor/composer/ClassLoader.php:414
+[21-Dec-2016 14:29:48 UTC] PHP Fatal error:  Class 'ModermWays\Mvc\Model' not found in /home/ubuntu/workspace/vendor/programmeren4/article/src/Model/Article.php on line 3
+[21-Dec-2016 14:29:48 UTC] PHP Stack trace:
+[21-Dec-2016 14:29:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:0
+[21-Dec-2016 14:29:48 UTC] PHP   2. ModernWays\Mvc\RouteConfig->invokeActionMethod() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:7
+[21-Dec-2016 14:29:48 UTC] PHP   3. ReflectionMethod->invoke() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:69
+[21-Dec-2016 14:29:48 UTC] PHP   4. Programmeren4\Article\Controller\Home->editing() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:69
+[21-Dec-2016 14:29:48 UTC] PHP   5. spl_autoload_call() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:14
+[21-Dec-2016 14:29:48 UTC] PHP   6. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:14
+[21-Dec-2016 14:29:48 UTC] PHP   7. Composer\Autoload\includeFile() /home/ubuntu/workspace/vendor/composer/ClassLoader.php:301
+[21-Dec-2016 14:29:48 UTC] PHP   8. include() /home/ubuntu/workspace/vendor/composer/ClassLoader.php:414
+[21-Dec-2016 14:31:15 UTC] PHP Warning:  include(/home/ubuntu/workspace/vendor/programmeren4/article/src/View/Home/Insrting.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/vendor/modernways/mvc/src/Controller.php on line 87
+[21-Dec-2016 14:31:15 UTC] PHP Stack trace:
+[21-Dec-2016 14:31:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:0
+[21-Dec-2016 14:31:15 UTC] PHP   2. ModernWays\Mvc\Controller->ModernWays\Mvc\{closure}() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:17
+[21-Dec-2016 14:31:15 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/vendor/programmeren4/article/src/View/Home/Insrting.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/vendor/modernways/mvc/src/Controller.php on line 87
+[21-Dec-2016 14:31:15 UTC] PHP Stack trace:
+[21-Dec-2016 14:31:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:0
+[21-Dec-2016 14:31:15 UTC] PHP   2. ModernWays\Mvc\Controller->ModernWays\Mvc\{closure}() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:17
+[21-Dec-2016 15:38:15 UTC] PHP Fatal error:  Call to a member function fetchAll() on a non-object in /home/ubuntu/workspace/vendor/programmeren4/article/src/Controller/Home.php on line 33
+[21-Dec-2016 15:38:15 UTC] PHP Stack trace:
+[21-Dec-2016 15:38:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:0
+[21-Dec-2016 15:38:15 UTC] PHP   2. ModernWays\Mvc\RouteConfig->invokeActionMethod() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:7
+[21-Dec-2016 15:38:15 UTC] PHP   3. ReflectionMethod->invoke() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:69
+[21-Dec-2016 15:38:15 UTC] PHP   4. Programmeren4\Article\Controller\Home->insert() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:69
+[21-Dec-2016 15:39:05 UTC] PHP Fatal error:  Call to a member function fetchAll() on a non-object in /home/ubuntu/workspace/vendor/programmeren4/article/src/Controller/Home.php on line 33
+[21-Dec-2016 15:39:05 UTC] PHP Stack trace:
+[21-Dec-2016 15:39:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:0
+[21-Dec-2016 15:39:05 UTC] PHP   2. ModernWays\Mvc\RouteConfig->invokeActionMethod() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:7
+[21-Dec-2016 15:39:05 UTC] PHP   3. ReflectionMethod->invoke() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:69
+[21-Dec-2016 15:39:05 UTC] PHP   4. Programmeren4\Article\Controller\Home->insert() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:69
+[21-Dec-2016 15:39:08 UTC] PHP Fatal error:  Call to a member function fetchAll() on a non-object in /home/ubuntu/workspace/vendor/programmeren4/article/src/Controller/Home.php on line 33
+[21-Dec-2016 15:39:08 UTC] PHP Stack trace:
+[21-Dec-2016 15:39:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:0
+[21-Dec-2016 15:39:08 UTC] PHP   2. ModernWays\Mvc\RouteConfig->invokeActionMethod() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:7
+[21-Dec-2016 15:39:08 UTC] PHP   3. ReflectionMethod->invoke() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:69
+[21-Dec-2016 15:39:08 UTC] PHP   4. Programmeren4\Article\Controller\Home->insert() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:69
+[22-Dec-2016 08:27:06 UTC] PHP Catchable fatal error:  Argument 1 passed to Programmeren4\Article\Controller\Home::__construct() must be an instance of ModernWays\Dialog\Model\Route, instance of ModernWays\Mvc\Route given in /home/ubuntu/workspace/vendor/programmeren4/article/src/Controller/Home.php on line 7
+[22-Dec-2016 08:27:06 UTC] PHP Stack trace:
+[22-Dec-2016 08:27:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:0
+[22-Dec-2016 08:27:06 UTC] PHP   2. ModernWays\Mvc\RouteConfig->invokeActionMethod() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:7
+[22-Dec-2016 08:27:06 UTC] PHP   3. ReflectionClass->newInstance() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:61
+[22-Dec-2016 08:27:06 UTC] PHP   4. Programmeren4\Article\Controller\Home->__construct() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:61
+[22-Dec-2016 08:27:40 UTC] PHP Fatal error:  Call to a member function getId() on a non-object in /home/ubuntu/workspace/vendor/programmeren4/article/src/Controller/Home.php on line 41
+[22-Dec-2016 08:27:40 UTC] PHP Stack trace:
+[22-Dec-2016 08:27:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:0
+[22-Dec-2016 08:27:40 UTC] PHP   2. ModernWays\Mvc\RouteConfig->invokeActionMethod() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:7
+[22-Dec-2016 08:27:40 UTC] PHP   3. ReflectionMethod->invoke() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:69
+[22-Dec-2016 08:27:40 UTC] PHP   4. Programmeren4\Article\Controller\Home->updating() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:69
+[22-Dec-2016 08:29:08 UTC] PHP Fatal error:  Call to a member function setName() on a non-object in /home/ubuntu/workspace/vendor/programmeren4/article/src/Controller/Home.php on line 44
+[22-Dec-2016 08:29:08 UTC] PHP Stack trace:
+[22-Dec-2016 08:29:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:0
+[22-Dec-2016 08:29:08 UTC] PHP   2. ModernWays\Mvc\RouteConfig->invokeActionMethod() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:7
+[22-Dec-2016 08:29:08 UTC] PHP   3. ReflectionMethod->invoke() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:69
+[22-Dec-2016 08:29:08 UTC] PHP   4. Programmeren4\Article\Controller\Home->updating() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:69
+[22-Dec-2016 08:36:14 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/vendor/programmeren4/article/src/Controller/Home.php on line 17
+[22-Dec-2016 08:36:14 UTC] PHP Stack trace:
+[22-Dec-2016 08:36:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:0
+[22-Dec-2016 08:36:14 UTC] PHP   2. ModernWays\Mvc\RouteConfig->invokeActionMethod() /home/ubuntu/workspace/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php:7
+[22-Dec-2016 08:36:14 UTC] PHP   3. ReflectionMethod->invoke() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:69
+[22-Dec-2016 08:36:14 UTC] PHP   4. Programmeren4\Article\Controller\Home->editing() /home/ubuntu/workspace/vendor/modernways/mvc/src/RouteConfig.php:69

@@ -1,7 +1,7 @@
 <?php
       include(dirname(dirname(__DIR__)).'/vendor/autoload.php');
       $appState = new \ModernWays\Dialog\Model\NoticeBoard();
-      $request = new \ModernWays\Mvc\Request('/home/index');
+      $request = new \ModernWays\Mvc\Request('/home/editing');
       $route = new \ModernWays\Mvc\Route($appState,$request->uc());
       $routeConfig = new \ModernWays\Mvc\RouteConfig('\Programmeren4\Article',$route,$appState);
       $view = $routeConfig->invokeActionMethod();

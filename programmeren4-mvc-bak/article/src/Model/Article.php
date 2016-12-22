@@ -1,6 +1,6 @@
 <?php
       namespace Programmeren4\Article\Model;
-      class Article extends \Modermways\Mvc\Model{
+      class Article extends \ModernWays\Mvc\Model{
             private $name;
             private $purchaseDate;
             private $price;

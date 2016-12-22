@@ -1,30 +1,28 @@
-<?php
-      
-?>
-
-<!doctype html>
-<html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <title>Inserting</title>
-</head>
-<body>
-      <form action="/article.php/Home/Insert" method="post">
+<main>
+    <header>
+        <h1>Garage Programmeren 4</h1>
+    </header>
+    <article>
+      <nav>
+            <a href=""></a>
+            <a href=""></a>
+      </nav>
+      <form action="/oefeningen/oefeningPdoMvc/oefeningPdoMvc.php/Home/Insert" method="post">
             <div>
                   <label for="ArticleName">Naam</label>
                   <input type="text" name="ArticleName"/>
             </div>
             <div>
-                  <label for="ArticlePrice">Naam</label>
-                  <input type="text" name="ArticleName"/>
+                  <label for="ArticlePrice">Prijs</label>
+                  <input type="text" name="ArticlePrice"/>
             </div>
             <div>
-                  <label for="ArticlePurchaseDate">Naam</label>
-                  <input type="text" name="ArticleName"/>
+                  <label for="ArticlePurchaseDate">Aankoopdatum</label>
+                  <input type="text" name="ArticlePurchaseDate"/>
             </div>
             <div>
                   <input type="submit" value="Submit"/>
             </div>
       </form>
-</body>
-</html>
+      </article>
+</main>
