@@ -23,7 +23,7 @@
             }
             
             public function setName($pName){
-                  $this->name = $pName;
+                  (strlen($pName)>0&&preg_match("/^[a-zA-Z 0-9]*$/"))? $this->name = $pName : $this->name ="";
             }
             
             public function setPrice($pPrice){
